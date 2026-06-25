@@ -8,288 +8,39 @@
   <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-  <!-- 粒子背景动画 -->
   <div id="particles-js"></div>
-  <!-- 导航栏 -->
   <nav class="navbar" id="navbar">
     <div class="container nav-inner">
       <a href="#" class="logo"><img src="images/logo.png" alt="壹米说电脑"/><span class="brand">壹米说电脑</span></a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#hero" class="active">首页</a></li>
-        <li><a href="#articles">公众号文章</a></li>
-        <li><a href="#software">软件分享</a></li>
-        <li><a href="#repair">维修下单</a></li>
-        <li><a href="#about">关于我</a></li>
+        <li><a href="#hero" class="active">首页</a></li><li><a href="#articles">公众号文章</a></li><li><a href="#software">软件分享</a></li><li><a href="#repair">维修下单</a></li><li><a href="#about">关于我</a></li>
       </ul>
-      <div class="nav-right">
-        <a href="#repair" class="btn btn-primary btn-sm-nav">维修下单</a>
-        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
-      </div>
+      <div class="nav-right"><a href="#repair" class="btn btn-primary btn-sm-nav">维修下单</a><button class="hamburger" id="hamburger"><span></span><span></span><span></span></button></div>
     </div>
   </nav>
-
-  <!-- 英雄区 -->
-  <section class="hero" id="hero">
-    <div class="hero-bg"></div>
-    <div class="container hero-inner">
-      
-      <h1>壹米说电脑</h1>
-      <p class="hero-sub">专注电脑硬件 · 系统技巧 · 维修经验分享</p>
-      <div class="search-box">
-        <input type="text" placeholder="搜索文章、软件、教程…" id="searchInput"/>
-        <button id="searchBtn"><i class="fas fa-search"></i></button>
-      </div>
-      <div class="hero-tags">
-        <span class="tag">电脑维修</span><span class="tag">系统重装</span><span class="tag">硬件评测</span><span class="tag">工具箱</span><span class="tag">软件推荐</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- 快捷入口 -->
-  <section class="quick-bar">
-    <div class="container quick-grid">
-      <a href="#articles" class="quick-item"><div class="qi-icon"><i class="fab fa-weixin"></i></div><span>公众号文章</span></a>
-      <a href="#software" class="quick-item"><div class="qi-icon green"><i class="fas fa-download"></i></div><span>软件分享</span></a>
-      <a href="#repair" class="quick-item"><div class="qi-icon orange"><i class="fas fa-wrench"></i></div><span>维修下单</span></a>
-      <a href="#about" class="quick-item"><div class="qi-icon purple"><i class="fas fa-user"></i></div><span>关于我</span></a>
-    </div>
-  </section>
-
-  <!-- 公众号文章 - 对接真实公众号文章 -->
-  <section class="section" id="articles">
-    <div class="container">
-      <div class="section-head">
-        <div><span class="sec-tag">公众号精选</span><h2>最新文章分享</h2></div>
-        <a href="https://mp.weixin.qq.com/s/havu_WZ8Miv27NmwWuRsOw" target="_blank" class="btn btn-outline-sm">查看全部 <i class="fas fa-arrow-right"></i></a>
-      </div>
-      <div class="article-grid">
-
-        <!-- 文章1: 为什么维修店重装系统收费50元 -->
-        <a href="https://mp.weixin.qq.com/s/havu_WZ8Miv27NmwWuRsOw" target="_blank" class="article-card card">
-          <div class="article-thumb"><div class="thumb-inner blue"><i class="fas fa-coins"></i></div></div>
-          <div class="article-body">
-            <span class="article-cat">系统重装</span>
-            <h3>为什么维修店重装系统收费50元，而网上系统镜像明明免费？</h3>
-            <p>揭秘维修行业潜规则：重装系统的真实成本与收费逻辑，帮你避坑省钱…</p>
-            <div class="article-meta"><span><i class="fas fa-eye"></i> 1.9k</span><span><i class="fas fa-heart"></i> 48</span></div>
-          </div>
-        </a>
-
-        <!-- 文章2: 为什么电脑放了半年开不了机 -->
-        <a href="https://mp.weixin.qq.com/s/havu_WZ8Miv27NmwWuRsOw" target="_blank" class="article-card card">
-          <div class="article-thumb"><div class="thumb-inner green"><i class="fas fa-power-off"></i></div></div>
-          <div class="article-body">
-            <span class="article-cat">硬件维修</span>
-            <h3>为什么电脑明明没坏，放了半年却开不了机？老维修师傅告诉你真实原因</h3>
-            <p>长期不开机的电脑为什么会损坏？哪些元件最容易出问题？一文讲清…</p>
-            <div class="article-meta"><span><i class="fas fa-eye"></i> 1.7k</span><span><i class="fas fa-heart"></i> 35</span></div>
-          </div>
-        </a>
-
-        <!-- 文章3: PE系统到底是什么 -->
-        <a href="https://mp.weixin.qq.com/s/havu_WZ8Miv27NmwWuRsOw" target="_blank" class="article-card card">
-          <div class="article-thumb"><div class="thumb-inner orange"><i class="fas fa-usb"></i></div></div>
-          <div class="article-body">
-            <span class="article-cat">系统工具</span>
-            <h3>PE系统到底是什么？为什么修电脑的人都有一个神秘U盘？</h3>
-            <p>从零认识PE系统：装机必备神器U盘的秘密，小白也能看懂…</p>
-            <div class="article-meta"><span><i class="fas fa-eye"></i> 1.1k</span><span><i class="fas fa-heart"></i> 18</span></div>
-          </div>
-        </a>
-
-        <!-- 文章4: 很多人电脑一发热就换硅脂 -->
-        <a href="https://mp.weixin.qq.com/s/havu_WZ8Miv27NmwWuRsOw" target="_blank" class="article-card card">
-          <div class="article-thumb"><div class="thumb-inner purple"><i class="fas fa-temperature-high"></i></div></div>
-          <div class="article-body">
-            <span class="article-cat">硬件保养</span>
-            <h3>很多人电脑一发热就换硅脂，其实根本没必要</h3>
-            <p>散热问题不能只靠换硅脂！教你正确判断和解决电脑过热的方法…</p>
-            <div class="article-meta"><span><i class="fas fa-eye"></i> 1.3k</span><span><i class="fas fa-heart"></i> 9</span></div>
-          </div>
-        </a>
-
-        <!-- 文章5: 装机师傅的工具箱 -->
-        <a href="https://mp.weixin.qq.com/s/havu_WZ8Miv27NmwWuRsOw" target="_blank" class="article-card card">
-          <div class="article-thumb"><div class="thumb-inner blue"><i class="fas fa-toolbox"></i></div></div>
-          <div class="article-body">
-            <span class="article-cat">工具推荐</span>
-            <h3>装机师傅都在用什么工具？分享我的专业维修工具箱3.1</h3>
-            <p>多年维修经验总结，从检测到维修一站式工具清单推荐…</p>
-            <div class="article-meta"><span><i class="fas fa-eye"></i> 1.2k</span><span><i class="fas fa-heart"></i> 36</span></div>
-          </div>
-        </a>
-
-        <!-- 文章6: 2026年了8GB内存还能用吗 -->
-        <a href="https://mp.weixin.qq.com/s/havu_WZ8Miv27NmwWuRsOw" target="_blank" class="article-card card">
-          <div class="article-thumb"><div class="thumb-inner green"><i class="fas fa-memory"></i></div></div>
-          <div class="article-body">
-            <span class="article-cat">硬件评测</span>
-            <h3>2026年了，8GB内存电脑还能用吗？</h3>
-            <p>实测对比不同内存容量下的日常使用体验，帮你决定是否需要升级…</p>
-            <div class="article-meta"><span><i class="fas fa-eye"></i> 1.2k</span><span><i class="fas fa-heart"></i> 15</span></div>
-          </div>
-        </a>
-
-        <!-- 文章7: U盘为什么要插三次 -->
-        <a href="https://mp.weixin.qq.com/s/havu_WZ8Miv27NmwWuRsOw" target="_blank" class="article-card card">
-          <div class="article-thumb"><div class="thumb-inner orange"><i class="fas fa-plug"></i></div></div>
-          <div class="article-body">
-            <span class="article-cat">电脑技巧</span>
-            <h3>U盘为什么总要插三次才成功？90%的人都不知道USB正确方向</h3>
-            <p>USB接口的小知识大揭秘，从此告别反复插拔的尴尬…</p>
-            <div class="article-meta"><span><i class="fas fa-eye"></i> 1k</span><span><i class="fas fa-heart"></i> 16</span></div>
-          </div>
-        </a>
-
-        <!-- 文章8: 显示器无信号怎么办 -->
-        <a href="https://mp.weixin.qq.com/s/havu_WZ8Miv27NmwWuRsOw" target="_blank" class="article-card card">
-          <div class="article-thumb"><div class="thumb-inner purple"><i class="fas fa-desktop"></i></div></div>
-          <div class="article-body">
-            <span class="article-cat">故障排查</span>
-            <h3>显示器无信号怎么办？维修师傅教你3分钟判断是主机坏了还是显示器坏了</h3>
-            <p>简单几步快速定位无信号故障源头，不用花钱找人修…</p>
-            <div class="article-meta"><span><i class="fas fa-eye"></i> 645</span><span><i class="fas fa-heart"></i> 6</span></div>
-          </div>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- 软件分享 -->
-  <section class="section alt" id="software">
-    <div class="container">
-      <div class="section-head">
-        <div><span class="sec-tag">精选资源</span><h2>软件分享下载</h2></div>
-      </div>
-      <div class="soft-cats">
-        <button class="cat-btn active" data-cat="all">全部</button>
-        <button class="cat-btn" data-cat="tools">实用工具</button>
-        <button class="cat-btn" data-cat="system">系统工具</button>
-        <button class="cat-btn" data-cat="repair">维修检测</button>
-      </div>
-      <div class="soft-grid" id="softGrid">
-        <div class="soft-card card" data-cat="tools">
-          <div class="soft-icon-box blue"><i class="fas fa-toolbox"></i></div>
-          <h3>壹米说电脑工具箱</h3>
-          <p>电脑维修检测、常用软件、定制工具箱，一站式搞定</p>
-          <a href="https://pan.baidu.com/s/1rs0AVBK9UjF9YFB-yZfFww?pwd=zhxc" target="_blank" class="btn btn-sm"><i class="fas fa-download"></i> 网盘下载</a>
-        </div>
-        <div class="soft-card card" data-cat="tools">
-          <div class="soft-icon-box green"><i class="fas fa-lightbulb"></i></div>
-          <h3>软件技巧分享合集</h3>
-          <p>壹米说电脑分享的软件合集，实用工具一网打尽</p>
-          <a href="https://pan.baidu.com/s/5K19zjFNfDDXftIR3TrgSlA" target="_blank" class="btn btn-sm"><i class="fas fa-external-link-alt"></i> 知识库</a>
-        </div>
-        <div class="soft-card card" data-cat="system">
-          <div class="soft-icon-box purple"><i class="fas fa-compact-disc"></i></div>
-          <h3>系统重装工具</h3>
-          <p>纯净Windows系统镜像 + 一键制作启动盘工具</p>
-          <a href="#" class="btn btn-sm"><i class="fas fa-download"></i> 免费下载</a>
-        </div>
-        <div class="soft-card card" data-cat="repair">
-          <div class="soft-icon-box orange"><i class="fas fa-stethoscope"></i></div>
-          <h3>硬件检测工具</h3>
-          <p>CPU/显卡/硬盘/内存全面检测，一眼看清硬件信息</p>
-          <a href="#" class="btn btn-sm"><i class="fas fa-download"></i> 免费下载</a>
-        </div>
-        <div class="soft-card card" data-cat="tools">
-          <div class="soft-icon-box teal"><i class="fas fa-broom"></i></div>
-          <h3>系统清理优化</h3>
-          <p>垃圾清理、注册表修复、启动项管理，一键提速</p>
-          <a href="#" class="btn btn-sm"><i class="fas fa-download"></i> 免费下载</a>
-        </div>
-        <div class="soft-card card" data-cat="system">
-          <div class="soft-icon-box red"><i class="fas fa-shield-alt"></i></div>
-          <h3>驱动管理工具</h3>
-          <p>自动识别硬件，一键安装/更新驱动程序</p>
-          <a href="#" class="btn btn-sm"><i class="fas fa-download"></i> 免费下载</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 维修下单 -->
-  <section class="section" id="repair">
-    <div class="container">
-      <div class="section-head center">
-        <span class="sec-tag">专业服务</span><h2>电脑维修下单</h2><p class="sec-desc">填写信息提交订单，我们会在 2 小时内联系您</p>
-      </div>
-      <div class="repair-wrapper">
-        <div class="repair-info">
-          <div class="ri-item"><div class="ri-icon"><i class="fas fa-clock"></i></div><div><h4>快速响应</h4><p>2小时内联系确认</p></div></div>
-          <div class="ri-item"><div class="ri-icon"><i class="fas fa-hand-holding-usd"></i></div><div><h4>透明报价</h4><p>检测后报价，修不好不收费</p></div></div>
-          <div class="ri-item"><div class="ri-icon"><i class="fas fa-shield-alt"></i></div><div><h4>质量保障</h4><p>维修后享90天质保</p></div></div>
-          <div class="ri-item"><div class="ri-icon"><i class="fas fa-headset"></i></div><div><h4>售后跟踪</h4><p>维修完成持续跟踪服务</p></div></div>
-        </div>
-        <form class="repair-form card" id="repairForm">
-  <input type="hidden" name="_subject" value="【壹米说电脑】新维修订单"/>
-  <input type="hidden" name="_template" value="table"/>
-  <input type="text" name="_honey" style="display:none"/>
-          <h3><i class="fas fa-edit"></i> 填写维修信息</h3>
-          <div class="form-row">
-            <div class="form-group"><label>您的姓名 *</label><input type="text" name="姓名" placeholder="请输入姓名" required/></div>
-            <div class="form-group"><label>联系电话 *</label><input type="tel" name="电话" placeholder="请输入手机号" required/></div>
-          </div>
-          <div class="form-row">
-            <div class="form-group"><label>设备类型</label>
-              <select name="设备类型"><option value="">请选择</option><option>台式电脑</option><option>笔记本电脑</option><option>一体机</option><option>其他</option></select>
-            </div>
-            <div class="form-group"><label>故障类型</label>
-              <select name="故障类型"><option value="">请选择</option><option>不开机</option><option>蓝屏死机</option><option>运行卡顿</option><option>屏幕故障</option><option>键盘/触控板</option><option>网络问题</option><option>系统重装</option><option>硬件升级</option><option>其他</option></select>
-            </div>
-          </div>
-          <div class="form-group"><label>故障描述</label><textarea rows="4" name="故障描述" placeholder="请简要描述您的电脑问题，越详细越有助于我们快速定位…"></textarea></div>
-          <div class="form-group"><label>期望维修方式</label>
-            <div class="radio-group">
-              <label class="radio-label"><input type="radio" name="维修方式" value="remote" checked/><span>远程协助</span></label>
-              <label class="radio-label"><input type="radio" name="维修方式" value="onsite"/><span>上门维修</span></label>
-              <label class="radio-label"><input type="radio" name="维修方式" value="mail"/><span>寄修</span></label>
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-paper-plane"></i> 提交维修订单</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- 关于我 -->
-  <section class="section alt" id="about">
-    <div class="container">
-      <div class="section-head center">
-        <span class="sec-tag">ABOUT ME</span><h2>关于壹米说电脑</h2>
-      </div>
-      <div class="about-grid">
-        <div class="about-card card"><div class="about-icon"><i class="fas fa-user-cog"></i></div><h3>个人简介</h3><p>从事电脑维修行业多年，坚持分享真实实用的电脑知识与技巧。不讲高深理论，只分享真正有用的实战经验。</p></div>
-        <div class="about-card card"><div class="about-icon blue"><i class="fas fa-bullseye"></i></div><h3>我的使命</h3><p>让每个人都能轻松搞定电脑问题。从硬件维修到系统优化，用最接地气的方式帮你解决电脑问题。</p></div>
-        <div class="about-card card"><div class="about-icon green"><i class="fas fa-hands-helping"></i></div><h3>服务内容</h3><p>电脑硬件维修、系统重装优化、远程技术支持、硬件选购指导。线上+线下全方位服务。</p></div>
-      </div>
-      <!-- 二维码 -->
-      <div class="qrcode-card card">
-        <div class="qr-left">
-          <h3>关注「壹米说电脑」公众号</h3>
-          <p>获取更多电脑技巧与实用工具，第一时间获取干货推送</p>
-          <div class="qr-tags"><span><i class="fas fa-check-circle"></i> 维修技巧</span><span><i class="fas fa-check-circle"></i> 硬件评测</span><span><i class="fas fa-check-circle"></i> 工具推荐</span></div>
-        </div>
-        <div class="qr-right"><img src="images/qrcode.jpg" alt="公众号二维码"/></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 页脚 -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-brand"><img src="images/logo.png" alt="壹米说电脑"/><span>壹米说电脑</span></div>
-      <p>&copy; 2025-2026 壹米说电脑 版权所有</p>
-      <div class="footer-links">
-        <a href="https://mp.weixin.qq.com/s/havu_WZ8Miv27NmwWuRsOw" target="_blank" title="公众号"><i class="fab fa-weixin"></i></a>
-        <a href="mailto:782987779@qq.com" title="邮箱"><i class="fas fa-envelope"></i></a>
-        <a href="https://leihongyue11-hash.github.io/yimidiannao11/" target="_blank" title="佛系修电脑"><i class="fas fa-heart"></i></a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="js/main.js"></script>
+  <section class="hero" id="hero"><div class="hero-bg"></div><div class="container hero-inner"><h1>壹米说电脑</h1><p class="hero-sub">专注电脑硬件 · 系统技巧 · 维修经验分享</p><div class="search-box"><input type="text" placeholder="搜索文章、软件、教程…" id="searchInput"/><button id="searchBtn"><i class="fas fa-search"></i></button></div><div class="hero-tags"><span class="tag">电脑维修</span><span class="tag">系统重装</span><span class="tag">硬件评测</span><span class="tag">工具箱</span><span class="tag">软件推荐</span></div></div></section>
+  <section class="quick-bar"><div class="container quick-grid"><a href="#articles" class="quick-item"><div class="qi-icon"><i class="fab fa-weixin"></i></div><span>公众号文章</span></a><a href="#software" class="quick-item"><div class="qi-icon green"><i class="fas fa-download"></i></div><span>软件分享</span></a><a href="#repair" class="quick-item"><div class="qi-icon orange"><i class="fas fa-wrench"></i></div><span>维修下单</span></a><a href="#about" class="quick-item"><div class="qi-icon purple"><i class="fas fa-user"></i></div><span>关于我</span></a></div></section>
+  <section class="section" id="articles"><div class="container"><div class="section-head"><div><span class="sec-tag">公众号精选</span><h2>最新文章分享</h2></div><a href="https://mp.weixin.qq.com/s/havu_WZ8Miv27NmwWuRsOw" target="_blank" class="btn btn-outline-sm">查看全部 <i class="fas fa-arrow-right"></i></a></div><div class="article-grid">
+    <a href="https://mp.weixin.qq.com/s/3vsykvdINsq_kdLMGuY3NA" target="_blank" class="article-card card"><div class="article-thumb"><div class="thumb-inner blue"><i class="fas fa-coins"></i></div></div><div class="article-body"><span class="article-cat">系统重装</span><h3>为什么维修店重装系统收费50元，而网上系统镜像明明免费？</h3><p>揭秘维修行业潜规则：重装系统的真实成本与收费逻辑，帮你避坑省钱…</p><div class="article-meta"><span><i class="fas fa-eye"></i> 1.9k</span><span><i class="fas fa-heart"></i> 48</span></div></div></a>
+    <a href="https://mp.weixin.qq.com/s/_0eY7Qmvm02u4HvyI9qPUg" target="_blank" class="article-card card"><div class="article-thumb"><div class="thumb-inner green"><i class="fas fa-power-off"></i></div></div><div class="article-body"><span class="article-cat">硬件维修</span><h3>为什么电脑明明没坏，放了半年却开不了机？老维修师傅告诉你真实原因</h3><p>长期不开机的电脑为什么会损坏？哪些元件最容易出问题？一文讲清…</p><div class="article-meta"><span><i class="fas fa-eye"></i> 1.7k</span><span><i class="fas fa-heart"></i> 35</span></div></div></a>
+    <a href="https://mp.weixin.qq.com/s/H0hMsZtwNwjYYfpsL_lcGg" target="_blank" class="article-card card"><div class="article-thumb"><div class="thumb-inner orange"><i class="fas fa-usb"></i></div></div><div class="article-body"><span class="article-cat">系统工具</span><h3>PE系统到底是什么？为什么修电脑的人都有一个神秘U盘？</h3><p>从零认识PE系统：装机必备神器U盘的秘密，小白也能看懂…</p><div class="article-meta"><span><i class="fas fa-eye"></i> 1.1k</span><span><i class="fas fa-heart"></i> 18</span></div></div></a>
+    <a href="https://mp.weixin.qq.com/s/H48uLDwZiUTeOgzilxUCUg" target="_blank" class="article-card card"><div class="article-thumb"><div class="thumb-inner purple"><i class="fas fa-temperature-high"></i></div></div><div class="article-body"><span class="article-cat">硬件保养</span><h3>很多人电脑一发热就换硅脂，其实根本没必要</h3><p>散热问题不能只靠换硅脂！教你正确判断和解决电脑过热的方法…</p><div class="article-meta"><span><i class="fas fa-eye"></i> 1.3k</span><span><i class="fas fa-heart"></i> 9</span></div></div></a>
+    <a href="https://mp.weixin.qq.com/s/T2p4VR6hxD37OLBfTfCnVw" target="_blank" class="article-card card"><div class="article-thumb"><div class="thumb-inner blue"><i class="fas fa-toolbox"></i></div></div><div class="article-body"><span class="article-cat">工具推荐</span><h3>装机师傅都在用什么工具？分享我的专业维修工具箱3.1</h3><p>多年维修经验总结，从检测到维修一站式工具清单推荐…</p><div class="article-meta"><span><i class="fas fa-eye"></i> 1.2k</span><span><i class="fas fa-heart"></i> 36</span></div></div></a>
+    <a href="https://mp.weixin.qq.com/s/mVcITeoieFSe11M4QO4oGw" target="_blank" class="article-card card"><div class="article-thumb"><div class="thumb-inner green"><i class="fas fa-memory"></i></div></div><div class="article-body"><span class="article-cat">硬件评测</span><h3>2026年了，8GB内存电脑还能用吗？</h3><p>实测对比不同内存容量下的日常使用体验，帮你决定是否需要升级…</p><div class="article-meta"><span><i class="fas fa-eye"></i> 1.2k</span><span><i class="fas fa-heart"></i> 15</span></div></div></a>
+    <a href="https://mp.weixin.qq.com/s/PCZUnwaVMUEmrQn6DUndLg" target="_blank" class="article-card card"><div class="article-thumb"><div class="thumb-inner orange"><i class="fas fa-plug"></i></div></div><div class="article-body"><span class="article-cat">电脑技巧</span><h3>U盘为什么总要插三次才成功？90%的人都不知道USB正确方向</h3><p>USB接口的小知识大揭秘，从此告别反复插拔的尴尬…</p><div class="article-meta"><span><i class="fas fa-eye"></i> 1k</span><span><i class="fas fa-heart"></i> 16</span></div></div></a>
+    <a href="https://mp.weixin.qq.com/s/42sMhefxz3_ELXuQDlqOUQ" target="_blank" class="article-card card"><div class="article-thumb"><div class="thumb-inner purple"><i class="fas fa-desktop"></i></div></div><div class="article-body"><span class="article-cat">故障排查</span><h3>显示器无信号怎么办？维修师傅教你3分钟判断是主机坏了还是显示器坏了</h3><p>简单几步快速定位无信号故障源头，不用花钱找人修…</p><div class="article-meta"><span><i class="fas fa-eye"></i> 645</span><span><i class="fas fa-heart"></i> 7</span></div></div></a>
+  </div></div></section>
+  <section class="section alt" id="software"><div class="container"><div class="section-head"><div><span class="sec-tag">精选资源</span><h2>软件分享下载</h2></div></div><div class="soft-cats"><button class="cat-btn active" data-cat="all">全部</button><button class="cat-btn" data-cat="tools">实用工具</button><button class="cat-btn" data-cat="system">系统工具</button><button class="cat-btn" data-cat="repair">维修检测</button></div><div class="soft-grid" id="softGrid">
+    <div class="soft-card card" data-cat="tools"><div class="soft-icon-box blue"><i class="fas fa-toolbox"></i></div><h3>壹米说电脑工具箱</h3><p>电脑维修检测、常用软件、定制工具箱，一站式搞定</p><a href="https://pan.baidu.com/s/1rs0AVBK9UjF9YFB-yZfFww?pwd=zhxc" target="_blank" class="btn btn-sm"><i class="fas fa-download"></i> 网盘下载</a></div>
+    <div class="soft-card card" data-cat="tools"><div class="soft-icon-box green"><i class="fas fa-lightbulb"></i></div><h3>软件技巧分享合集</h3><p>壹米说电脑分享的软件合集，实用工具一网打尽</p><a href="https://pan.baidu.com/s/5K19zjFNfDDXftIR3TrgSlA" target="_blank" class="btn btn-sm"><i class="fas fa-external-link-alt"></i> 知识库</a></div>
+    <div class="soft-card card" data-cat="system"><div class="soft-icon-box purple"><i class="fas fa-compact-disc"></i></div><h3>系统重装工具</h3><p>纯净Windows系统镜像 + 一键制作启动盘工具</p><a href="#" class="btn btn-sm"><i class="fas fa-download"></i> 免费下载</a></div>
+    <div class="soft-card card" data-cat="repair"><div class="soft-icon-box orange"><i class="fas fa-stethoscope"></i></div><h3>硬件检测工具</h3><p>CPU/显卡/硬盘/内存全面检测，一眼看清硬件信息</p><a href="#" class="btn btn-sm"><i class="fas fa-download"></i> 免费下载</a></div>
+    <div class="soft-card card" data-cat="tools"><div class="soft-icon-box teal"><i class="fas fa-broom"></i></div><h3>系统清理优化</h3><p>垃圾清理、注册表修复、启动项管理，一键提速</p><a href="#" class="btn btn-sm"><i class="fas fa-download"></i> 免费下载</a></div>
+    <div class="soft-card card" data-cat="system"><div class="soft-icon-box red"><i class="fas fa-shield-alt"></i></div><h3>驱动管理工具</h3><p>自动识别硬件，一键安装/更新驱动程序</p><a href="#" class="btn btn-sm"><i class="fas fa-download"></i> 免费下载</a></div>
+  </div></div></section>
+  <section class="section" id="repair"><div class="container"><div class="section-head center"><span class="sec-tag">专业服务</span><h2>电脑维修下单</h2><p class="sec-desc">填写信息提交订单，我们会在 2 小时内联系您</p></div><div class="repair-wrapper"><div class="repair-info"><div class="ri-item"><div class="ri-icon"><i class="fas fa-clock"></i></div><div><h4>快速响应</h4><p>2小时内联系确认</p></div></div><div class="ri-item"><div class="ri-icon"><i class="fas fa-hand-holding-usd"></i></div><div><h4>透明报价</h4><p>检测后报价，修不好不收费</p></div></div><div class="ri-item"><div class="ri-icon"><i class="fas fa-shield-alt"></i></div><div><h4>质量保障</h4><p>维修后享90天质保</p></div></div><div class="ri-item"><div class="ri-icon"><i class="fas fa-headset"></i></div><div><h4>售后跟踪</h4><p>维修完成持续跟踪服务</p></div></div></div><form class="repair-form card" id="repairForm"><input type="hidden" name="_subject" value="【壹米说电脑】新维修订单"/><input type="hidden" name="_template" value="table"/><input type="text" name="_honey" style="display:none"/><h3><i class="fas fa-edit"></i> 填写维修信息</h3><div class="form-row"><div class="form-group"><label>您的姓名 *</label><input type="text" name="姓名" placeholder="请输入姓名" required/></div><div class="form-group"><label>联系电话 *</label><input type="tel" name="电话" placeholder="请输入手机号" required/></div></div><div class="form-row"><div class="form-group"><label>设备类型</label><select name="设备类型"><option value="">请选择</option><option>台式电脑</option><option>笔记本电脑</option><option>一体机</option><option>其他</option></select></div><div class="form-group"><label>故障类型</label><select name="故障类型"><option value="">请选择</option><option>不开机</option><option>蓝屏死机</option><option>运行卡顿</option><option>屏幕故障</option><option>键盘/触控板</option><option>网络问题</option><option>系统重装</option><option>硬件升级</option><option>其他</option></select></div></div><div class="form-group"><label>故障描述</label><textarea rows="4" name="故障描述" placeholder="请简要描述您的电脑问题，越详细越有助于我们快速定位…"></textarea></div><div class="form-group"><label>期望维修方式</label><div class="radio-group"><label class="radio-label"><input type="radio" name="维修方式" value="remote" checked/><span>远程协助</span></label><label class="radio-label"><input type="radio" name="维修方式" value="onsite"/><span>上门维修</span></label><label class="radio-label"><input type="radio" name="维修方式" value="mail"/><span>寄修</span></label></div></div><button type="submit" class="btn btn-primary btn-full"><i class="fas fa-paper-plane"></i> 提交维修订单</button></form></div></div></section>
+  <section class="section alt" id="about"><div class="container"><div class="section-head center"><span class="sec-tag">ABOUT ME</span><h2>关于壹米说电脑</h2></div><div class="about-grid"><div class="about-card card"><div class="about-icon"><i class="fas fa-user-cog"></i></div><h3>个人简介</h3><p>从事电脑维修行业多年，坚持分享真实实用的电脑知识与技巧。不讲高深理论，只分享真正有用的实战经验。</p></div><div class="about-card card"><div class="about-icon blue"><i class="fas fa-bullseye"></i></div><h3>我的使命</h3><p>让每个人都能轻松搞定电脑问题。从硬件维修到系统优化，用最接地气的方式帮你解决电脑问题。</p></div><div class="about-card card"><div class="about-icon green"><i class="fas fa-hands-helping"></i></div><h3>服务内容</h3><p>电脑硬件维修、系统重装优化、远程技术支持、硬件选购指导。线上+线下全方位服务。</p></div></div><div class="qrcode-card card"><div class="qr-left"><h3>关注「壹米说电脑」公众号</h3><p>获取更多电脑技巧与实用工具，第一时间获取干货推送</p><div class="qr-tags"><span><i class="fas fa-check-circle"></i> 维修技巧</span><span><i class="fas fa-check-circle"></i> 硬件评测</span><span><i class="fas fa-check-circle"></i> 工具推荐</span></div></div><div class="qr-right"><img src="images/qrcode.jpg" alt="公众号二维码"/></div></div></div></section>
+  <footer class="footer"><div class="container footer-inner"><div class="footer-brand"><img src="images/logo.png" alt="壹米说电脑"/><span>壹米说电脑</span></div><p>&copy; 2025-2026 壹米说电脑 版权所有</p><div class="footer-links"><a href="https://mp.weixin.qq.com/s/havu_WZ8Miv27NmwWuRsOw" target="_blank" title="公众号"><i class="fab fa-weixin"></i></a><a href="mailto:782987779@qq.com" title="邮箱"><i class="fas fa-envelope"></i></a><a href="https://leihongyue11-hash.github.io/yimidiannao11/" target="_blank" title="佛系修电脑"><i class="fas fa-heart"></i></a></div></div></footer>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script><script src="js/main.js"></script>
 </body>
 </html>
